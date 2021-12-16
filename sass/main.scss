@@ -1,0 +1,37 @@
+@import './utils/variables';
+@import './utils/base-styles';
+@import './utils/geometry';
+@import './utils/visually-hidden';
+@import './utils/button';
+
+@import './components/header/page-header';
+@import './components/logo';
+@import './components/header/logo-header';
+@import './components/header/navigation-menue-header';
+@import './components/header/contacts-header';
+@import './components/header/icon-header';
+
+@import './components/title';
+
+@import './components/hero/hero';
+@import './components/hero/modal';
+@import './components/hero/form-hero';
+@import './components/hero/hero-overlay';
+@import './components/hero/hero-button';
+
+@import './components/features/features';
+@import './components/duties/duties';
+
+@import './components/team/team';
+@import './components/social-bar';
+
+@import './components/customers/reqular-customers';
+
+@import './components/footer/footer';
+@import './components/footer/form-footer';
+@import './components/footer/adress';
+@import './components/footer/footer-logo';
+@import './components/footer/footer__social-bar';
+
+@import './components/portfolio/buttons-bar_portfolio';
+@import './components/portfolio/photo';

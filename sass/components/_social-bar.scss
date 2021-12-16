@@ -1,0 +1,34 @@
+.team__social-bar {
+  // margin-top: 16px;
+}
+
+.social-bar__item {
+  // max-width: 44px;
+  // max-height: 44px;
+}
+
+.social-bar__item:not(:last-child) {
+  // margin-right: 10px;
+}
+
+.social-bar__link {
+  // padding: 12px;
+  // border-radius: 50%;
+}
+
+.social-bar__link_bcg_color_rotate {
+  // fill: #afb1b8;
+  // transform: rotate(0);
+  // transition: background-color 250ms var(--transition-timing-function),
+  //   fill 250ms var(--transition-timing-function), transform 250ms linear;
+}
+
+.social-bar__link_bcg_color_rotate {
+  &:focus,
+  &:hover {
+    // background-color: var(--accent-color);
+
+    // fill: #ffffff;
+    // transform: rotate(1turn);
+  }
+}
