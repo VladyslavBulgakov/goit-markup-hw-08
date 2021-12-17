@@ -1,11 +1,15 @@
 .contacts-header__icon {
-  // fill: #757575;
-  // margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    fill: #757575;
+    margin-right: 10px;
 
-  // transition: fill 250ms var(--transition-timing-function);
+    transition: fill 250ms var(--transition-timing-function);
+  }
 
   .contacts-header__link:hover &,
   .contacts-header__link:focus & {
-    // fill: var(--accent-color);
+    @media screen and (min-width: 768px) {
+      fill: var(--accent-color);
+    }
   }
 }

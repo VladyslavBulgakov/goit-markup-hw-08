@@ -21,11 +21,22 @@
     <!--Header-->
     <header class="page-header">
       <!--Navigation section-->
-      <div class="container container-flex">
+      <div class="container container-flex container-navigation-flex">
         <nav class="navigation container-flex">
           <a href="./index.html" class="logo header-logo logo-padding"
             ><span class="logo__accent">Web</span>Studio</a
           >
+
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu-mobile"></use>
+            </svg>
+          </button>
 
           <!--Menu of navigation-->
           <ul class="navigation__list container-flex">
@@ -48,7 +59,12 @@
           <li class="contacts-header__item">
             <a
               href="mailto:info@devstudio.com"
-              class="contacts-header__link contacts-header__link_padding container-flex"
+              class="
+                contacts-header__link
+                contacts-header__link_padding
+                contacts-header__link_padding-top
+                container-flex
+              "
             >
               <svg class="contacts-header__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -59,7 +75,12 @@
           <li class="contacts-header__item">
             <a
               href="tel:+380961111111"
-              class="contacts-header__link contacts-header__link_padding container-flex"
+              class="
+                contacts-header__link
+                contacts-header__link_padding
+                contacts-header__link_padding-bottom
+                container-flex
+              "
             >
               <svg class="contacts-header__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -70,6 +91,53 @@
         </ul>
       </div>
     </header>
+    <!--!!!!!!!!!!!!!!!!!!!!!1- мобильная разметка ----------------------!!!!!!!!!!!!!!!!! -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="button-cross js-close-menu">
+        <svg width="18.67" height="18.67">
+          <use class="" href="./images/sprite.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+      <nav class="mobile-navigation-menu">
+        <ul class="mobile-navigation-menu__list">
+          <li class="mobile-navigation-menu__list">
+            <a class="mobile-navigation-menu__link" href="#">Студия</a>
+          </li>
+          <li class="mobile-navigation-menu__list">
+            <a class="mobile-navigation-menu__link" href="#">Портфолио</a>
+          </li>
+          <li class="mobile-navigation-menu__list">
+            <a class="mobile-navigation-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-contacts__list">
+          <a class="mobile-menu-contacts__link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="mobile-menu-contacts__list">
+          <a class="mobile-menu-contacts__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-social">
+        <li class="mobile-menu-social__list">
+          <a href="mobile-menu-social__link">Instagram</a>
+        </li>
+        <li class="mobile-menu-social__list">
+          <a href="mobile-menu-social__link">Twitter</a>
+        </li>
+        <li class="mobile-menu-social__list">
+          <a href="mobile-menu-social__link">Facebook</a>
+        </li>
+        <li class="mobile-menu-social__list">
+          <a href="mobile-menu-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <!--Main section-->
     <main>
@@ -723,6 +791,13 @@
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script> -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
     <!-- --------------- ----------------------- ----------------------------- ----------------------- -->
     <!-- <script>
