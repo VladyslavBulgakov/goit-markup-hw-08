@@ -93,50 +93,54 @@
     </header>
     <!--!!!!!!!!!!!!!!!!!!!!!1- мобильная разметка ----------------------!!!!!!!!!!!!!!!!! -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="button-cross js-close-menu">
-        <svg width="18.67" height="18.67">
-          <use class="" href="./images/sprite.svg#icon-close-mobile"></use>
-        </svg>
-      </button>
-      <nav class="mobile-navigation-menu">
-        <ul class="mobile-navigation-menu__list">
-          <li class="mobile-navigation-menu__list">
-            <a class="mobile-navigation-menu__link" href="#">Студия</a>
+      <div class="container">
+        <button class="button-cross js-close-menu">
+          <svg width="18.67" height="18.67">
+            <use class="" href="./images/sprite.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <nav class="mobile-navigation-menu">
+          <ul class="mobile-navigation-menu__list">
+            <li class="mobile-navigation-menu__item">
+              <a class="mobile-navigation-menu__link current-mobile" href="#">Студия</a>
+            </li>
+            <li class="mobile-navigation-menu__item">
+              <a class="mobile-navigation-menu__link" href="#">Портфолио</a>
+            </li>
+            <li class="mobile-navigation-menu__item">
+              <a class="mobile-navigation-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts__item">
+            <a class="mobile-menu-contacts__link_phone" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
           </li>
-          <li class="mobile-navigation-menu__list">
-            <a class="mobile-navigation-menu__link" href="#">Портфолио</a>
-          </li>
-          <li class="mobile-navigation-menu__list">
-            <a class="mobile-navigation-menu__link" href="#">Контакты</a>
+          <li class="mobile-menu-contacts__item">
+            <a class="mobile-menu-contacts__link_mail" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
           </li>
         </ul>
-      </nav>
 
-      <ul class="mobile-menu-contacts">
-        <li class="mobile-menu-contacts__list">
-          <a class="mobile-menu-contacts__link" href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="mobile-menu-contacts__list">
-          <a class="mobile-menu-contacts__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
-        </li>
-      </ul>
-
-      <ul class="mobile-menu-social">
-        <li class="mobile-menu-social__list">
-          <a href="mobile-menu-social__link">Instagram</a>
-        </li>
-        <li class="mobile-menu-social__list">
-          <a href="mobile-menu-social__link">Twitter</a>
-        </li>
-        <li class="mobile-menu-social__list">
-          <a href="mobile-menu-social__link">Facebook</a>
-        </li>
-        <li class="mobile-menu-social__list">
-          <a href="mobile-menu-social__link">LinkedIn</a>
-        </li>
-      </ul>
+        <ul class="mobile-menu-social">
+          <li class="mobile-menu-social__item">
+            <a href="#" class="mobile-menu-social__link">Instagram</a>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a href="#" class="mobile-menu-social__link">Twitter</a>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a href="#" class="mobile-menu-social__link">Facebook</a>
+          </li>
+          <li class="mobile-menu-social__item">
+            <a href="#" class="mobile-menu-social__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!--Main section-->
@@ -152,14 +156,14 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal__button-close modal__button-position" data-modal-close>
-            <div class="modal__icon-close">
+            <div class="modal__icon-close visually-hidden">
               <svg width="11" height="11">
                 <use href="./images/sprite.svg#icon-close-black"></use>
               </svg>
             </div>
           </button>
 
-          <div>
+          <div class="visually-hidden">
             <p class="modal-tile">Оставьте свои данные, мы вам перезвоним</p>
 
             <form action="#" class="modal-form" autocomplete="off">
@@ -244,7 +248,7 @@
 
       <!--Features-->
 
-      <section class="features section section_color">
+      <section class="visually-hidden features section section_color">
         <div class="container">
           <!--Через сss скрыт заголовок этой секции-->
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -303,7 +307,7 @@
       </section>
 
       <!--Our duties-->
-      <section class="duties section section_color">
+      <section class="visually-hidden duties section section_color">
         <div class="container">
           <h2 class="title title_duties">Чем мы знимаемся</h2>
 
@@ -358,7 +362,7 @@
       </section>
 
       <!--Team-->
-      <section class="team section">
+      <section class="visually-hidden team section">
         <div class="container">
           <h2 class="title title_team">Наша команда</h2>
 
@@ -626,7 +630,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="visually-hidden section">
         <div class="container">
           <h3 class="title title_customers">Постоянные клиенты</h3>
 
@@ -679,7 +683,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="visually-hidden footer">
       <div class="container container-flex">
         <div class="adress-mr">
           <a href="./index.html" class="logo footer-logo">

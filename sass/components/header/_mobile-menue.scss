@@ -23,7 +23,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 48px 83px 48px 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   width: 100vw;
   height: 100vh;
   z-index: 999;
@@ -34,11 +35,17 @@
 
   transform: translateX(100%);
   transition: transform 250ms var(--transition-timing-function);
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -60,9 +67,104 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   background-color: transparent;
-  transition: fill 250ms var(--transition-timing-function);
+  transition: fill 250ms var(--transition-timing-function),
+    transform 250ms var(--transition-timing-function);
   &:hover,
   &:focus {
+    transform: rotate(180deg);
     fill: var(--accent-color);
+  }
+}
+
+.mobile-navigation-menu {
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    transition: color 250ms var(--transition-timing-function);
+  }
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: var(--accent-color);
+  }
+
+  &__item + &__item {
+    margin-top: 32px;
+  }
+}
+.current-mobile {
+  color: var(--accent-color);
+}
+
+.mobile-menu-contacts {
+  margin-top: auto;
+
+  &__link_phone {
+    display: block;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+
+    @media screen and (max-width: 377px) {
+      font-size: 25px;
+    }
+  }
+  &__link_mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16px;
+    letter-spacing: 0.02em;
+
+    color: currentColor;
+    transition: color 250ms var(--transition-timing-function);
+  }
+  &__link_mail:hover,
+  &__link_mail:focus {
+    color: var(--accent-color);
+  }
+
+  &__item + &__item {
+    margin-top: 32px;
+  }
+}
+
+.mobile-menu-social {
+  display: flex;
+  margin-top: 64px;
+  min-width: 100%;
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+    @media screen and (max-width: 377px) {
+      font-size: 15px;
+      line-height: 1.12;
+    }
+  }
+
+  &__item:not(:last-child)::after {
+    content: '';
+    height: 100%;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
