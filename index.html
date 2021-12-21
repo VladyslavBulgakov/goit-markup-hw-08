@@ -156,81 +156,75 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal__button-close modal__button-position" data-modal-close>
-            <div class="modal__icon-close visually-hidden">
+            <div class="modal__icon-close">
               <svg width="11" height="11">
                 <use href="./images/sprite.svg#icon-close-black"></use>
               </svg>
             </div>
           </button>
 
-          <div class="visually-hidden">
-            <p class="modal-tile">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="modal-tile">Оставьте свои данные, мы вам перезвоним</p>
 
-            <form action="#" class="modal-form" autocomplete="off">
-              <label class="form-field modal-form__label">
-                <input class="modal-form__input" type="name" name="name" placeholder=" " required />
-                <span class="modal-form__text">Имя</span>
+          <form action="#" class="modal-form" autocomplete="off">
+            <label class="modal-form__label">
+              <input class="modal-form__input" type="name" name="name" placeholder=" " required />
+              <span class="modal-form__text">Имя</span>
 
-                <span class="modal-form__icon">
-                  <svg width="12" height="12">
-                    <use href="./images/sprite.svg#icon-namemodal "></use>
-                  </svg>
-                </span>
-              </label>
+              <span class="modal-form__icon">
+                <svg width="12" height="12">
+                  <use href="./images/sprite.svg#icon-namemodal "></use>
+                </svg>
+              </span>
+            </label>
 
-              <label class="form-field modal-form__label">
-                <input class="modal-form__input" type="tel" name="tel" placeholder=" " required />
-                <span class="modal-form__text">Телефон</span>
+            <label class="modal-form__label">
+              <input class="modal-form__input" type="tel" name="tel" placeholder=" " required />
+              <span class="modal-form__text">Телефон</span>
 
-                <span class="modal-form__icon">
-                  <svg width="13" height="13">
-                    <use href="./images/sprite.svg#icon-phonemodal "></use>
-                  </svg>
-                </span>
-              </label>
+              <span class="modal-form__icon">
+                <svg width="13" height="13">
+                  <use href="./images/sprite.svg#icon-phonemodal "></use>
+                </svg>
+              </span>
+            </label>
 
-              <label class="form-field-email modal-form__label">
-                <input
-                  class="modal-form__input"
-                  type="email"
-                  name="email"
-                  placeholder=" "
-                  required
-                />
-                <span class="modal-form__text">Почта</span>
-                <span class="modal-form__icon">
-                  <svg width="15" height="12">
-                    <use href="./images/sprite.svg#icon-emailmodal "></use>
-                  </svg>
-                </span>
-              </label>
+            <label class="modal-form__label">
+              <input class="modal-form__input" type="email" name="email" placeholder=" " required />
+              <span class="modal-form__text">Почта</span>
+              <span class="modal-form__icon">
+                <svg width="15" height="12">
+                  <use href="./images/sprite.svg#icon-emailmodal "></use>
+                </svg>
+              </span>
+            </label>
 
-              <label class="textarea">
-                Комментарий
-                <textarea
-                  class="textarea__comment"
-                  name="comment"
-                  rows="10"
-                  placeholder="Введите текст"
-                ></textarea>
-              </label>
+            <label class="textarea">
+              Комментарий
+              <textarea
+                class="textarea__comment"
+                name="comment"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
 
-              <label class="checkbox checkbox-margin">
-                <input
-                  type="checkbox"
-                  name="user-agreement"
-                  value="user-agreement"
-                  class="checkbox__input checkbox__input-hidden"
-                />
-                <span class="checkbox__icon"></span>
-
+            <label class="checkbox checkbox-margin">
+              <input
+                type="checkbox"
+                name="user-agreement"
+                value="user-agreement"
+                class="checkbox__input checkbox__input-hidden"
+              />
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">
                 Соглашаюсь с рассылкой и принимаю
-                <a href="#" class="user-agreement"> Условия договора </a>
-              </label>
+                <a href="#" class="checkbox__link"> Условия договора </a></span
+              >
+            </label>
 
-              <button type="submit" class="modal-form__button button">Отправить</button>
+            <button type="submit" class="modal-form__button button">Отправить</button>
 
-              <!-- <script>
+            <!-- <script>
                 let button = document.querySelector('.modal-form__button');
 
                 button.onmousemove = e => {
@@ -241,19 +235,18 @@
                   button.style.setProperty('--y', y + 'px');
                 };
               </script> -->
-            </form>
-          </div>
+          </form>
         </div>
       </div>
 
       <!--Features-->
 
-      <section class="visually-hidden features section section_color">
+      <section class="features section section_color">
         <div class="container">
           <!--Через сss скрыт заголовок этой секции-->
           <h2 class="visually-hidden">Наши преимущества</h2>
 
-          <ul class="features__list container-flex">
+          <ul class="features__list">
             <li class="features__item item-size item-mr">
               <div class="features__icon container-flex">
                 <svg width="65.32" height="70">
