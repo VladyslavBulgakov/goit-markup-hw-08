@@ -21,8 +21,8 @@
     <!--Header-->
     <header class="page-header">
       <!--Navigation section-->
-      <div class="container container-flex container-navigation-flex">
-        <nav class="navigation container-flex">
+      <div class="container container-navigation-flex">
+        <nav class="navigation">
           <a href="./index.html" class="logo header-logo logo-padding"
             ><span class="logo__accent">Web</span>Studio</a
           >
@@ -39,7 +39,7 @@
           </button>
 
           <!--Menu of navigation-->
-          <ul class="navigation__list container-flex">
+          <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#" class="navigation__link navigation__link_geometry current">Студия</a>
             </li>
@@ -146,7 +146,7 @@
     <!--Main section-->
     <main>
       <!-- Hero -->
-      <section class="hero hero-overlay">
+      <section class="visually-hidden hero hero-overlay">
         <div class="container">
           <h1 class="hero__text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button type="button" class="hero__button button" data-modal-open>Заказать услугу</button>
@@ -241,7 +241,7 @@
 
       <!--Features-->
 
-      <section class="features section section_color">
+      <section class="visually-hidden features section section_color">
         <div class="container">
           <!--Через сss скрыт заголовок этой секции-->
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -305,17 +305,22 @@
           <h2 class="title title_duties">Чем мы знимаемся</h2>
 
           <!--Photos of duties-->
-          <ul class="duties__list container-flex">
+          <ul class="duties__list">
             <li class="duties__item">
               <div class="duties__image_position_relative">
                 <img
-                  src="./images/img-1.jpg"
+                  srcset="
+                    ./images/duties1-370-x1.jpg  1x,
+                    ./images/duties1-740-x2.jpg  2x,
+                    ./images/duties1-1110-x3.jpg 3x
+                  "
+                  src="./images/duties-370px-x1.jpg"
                   alt="Планшет, техническое задание, разработка в соответствии с заданием"
                   width="370"
                   height="294"
                 />
 
-                <div class="duties__image_position_absolute">
+                <div class="duties__text_position_absolute">
                   <p>Десктопные приложения</p>
                 </div>
               </div>
@@ -324,13 +329,18 @@
             <li class="duties__item">
               <div class="duties__image_position_relative">
                 <img
-                  src="./images/img-2.jpg"
+                  srcset="
+                    ./images/duties2-370-x1.jpg  1x,
+                    ./images/duties2-740-x2.jpg  2x,
+                    ./images/duties2-1110-x3.jpg 3x
+                  "
+                  src="./images/duties2-370-x1.jpg "
                   alt="Телефон, ноутбук, эскизы, оптимизация под мобильное приложение"
                   width="370"
                   height="294"
                 />
 
-                <div class="duties__image_position_absolute">
+                <div class="duties__text_position_absolute">
                   <p>Мобильные приложения</p>
                 </div>
               </div>
@@ -339,13 +349,18 @@
             <li class="duties__item">
               <div class="duties__image_position_relative">
                 <img
-                  src="./images/img-3.jpg"
+                  srcset="
+                    ./images/duties3-370-x1.jpg  1x,
+                    ./images/duties3-740-x2.jpg  2x,
+                    ./images/duties3-1110-x3.jpg 3x
+                  "
+                  src="./images/duties3-370-x1.jpg "
                   alt="Планшет, палитра цветов, выбор оттенка "
                   width="370"
                   height="294"
                 />
 
-                <div class="duties__image_position_absolute">
+                <div class="duties__text_position_absolute">
                   <p>Дизайнерские решения</p>
                 </div>
               </div>
@@ -360,15 +375,19 @@
           <h2 class="title title_team">Наша команда</h2>
 
           <!--Photos of our team-->
-          <ul class="team-list container-flex">
+          <ul class="team-list">
             <li class="team-list__item">
               <img
-                src="./images/img-1.1.jpg"
+                srcset="
+                  ./images/mate1-450-x1.jpg   450w,
+                  ./images/mate1-900-x2.jpg   900w,
+                  ./images/mate1-1350-x3.jpg 1350w
+                "
+                src="./images/mate1-mobile-450-x1.jpg"
                 alt="Мужчина в имиджевых очках с бородой, улыбается"
-                width="270"
-                height="260"
-                class="portrait-img"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
               />
+
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__job" lang="en">Product Designer</p>
@@ -428,11 +447,14 @@
 
             <li class="team-list__item">
               <img
-                src="./images/img-2.2.jpg"
-                alt="Девушка в имиджевых очках, блондинка в деловом костюме, улыбается"
-                width="270"
-                height="260"
-                class=""
+                srcset="
+                  ./images/mate2-450-x1.jpg   450w,
+                  ./images/mate2-900-x2.jpg   900w,
+                  ./images/mate2-1350-x3.jpg 1350w
+                "
+                src="./images/mate2-450-x1.jpg"
+                alt="Девушка в имиджевых очках и деловом костюме, блондинка, улыбается "
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
               />
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Ольга Репина</h3>
@@ -492,11 +514,14 @@
             </li>
             <li class="team-list__item">
               <img
-                src="./images/img-3.3.jpg"
-                alt="Мужчина в рубашке небесного цвета с улыбкой"
-                width="270"
-                height="260"
-                class="portrait-img"
+                srcset="
+                  ./images/mate3-450-x1.jpg   450w,
+                  ./images/mate3-900-x2.jpg   900w,
+                  ./images/mate3-1350-x3.jpg 1350w
+                "
+                src="./images/mate3-450-x1.jpg"
+                alt="Мужчина в рубашке с улыбкой на лице"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
               />
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Николай Тарасов</h3>
@@ -556,11 +581,14 @@
             </li>
             <li class="team-list__item">
               <img
-                src="./images/img-4.4.jpg"
-                alt="Мужчина в черной футболке с коротко стриженной бородой"
-                width="270"
-                height="260"
-                class=""
+                srcset="
+                  ./images/mate4-450-x1.jpg   450w,
+                  ./images/mate4-900-x2.jpg   900w,
+                  ./images/mate4-1350-x3.jpg 1350w
+                "
+                src="./images/mate4-450-x1.jpg"
+                alt="Мужчина с бородой в очках"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
               />
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
@@ -627,44 +655,44 @@
         <div class="container">
           <h3 class="title title_customers">Постоянные клиенты</h3>
 
-          <ul class="customers-logo container-flex">
+          <ul class="customers-logo">
             <li class="customers-logo__item">
-              <a href="" class="customers-logo__link container-flex">
+              <a href="#" class="customers-logo__link container-flex">
                 <svg class="customers-logo__icon">
                   <use href="./images/sprite.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-logo__item">
-              <a href="" class="customers-logo__link container-flex">
+              <a href="#" class="customers-logo__link container-flex">
                 <svg class="customers-logo__icon">
                   <use href="./images/sprite.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-logo__item">
-              <a href="" class="customers-logo__link container-flex">
+              <a href="#" class="customers-logo__link container-flex">
                 <svg class="customers-logo__icon">
                   <use href="./images/sprite.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-logo__item">
-              <a href="" class="customers-logo__link container-flex">
+              <a href="#" class="customers-logo__link container-flex">
                 <svg class="customers-logo__icon">
                   <use href="./images/sprite.svg#icon-Logo4"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-logo__item">
-              <a href="" class="customers-logo__link container-flex">
+              <a href="#" class="customers-logo__link container-flex">
                 <svg class="customers-logo__icon">
                   <use href="./images/sprite.svg#icon-Logo5"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-logo__item">
-              <a href="" class="customers-logo__link container-flex">
+              <a href="#" class="customers-logo__link container-flex">
                 <svg class="customers-logo__icon">
                   <use href="./images/sprite.svg#icon-Logo6"></use>
                 </svg>
