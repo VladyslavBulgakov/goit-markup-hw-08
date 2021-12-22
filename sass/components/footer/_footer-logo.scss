@@ -1,13 +1,19 @@
 .footer-logo {
+  display: inline-block;
   color: #ffffff;
-  // width: 231px;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
 
-  // transition: color 250ms var(--transition-timing-function);
+  transition: color 250ms var(--transition-timing-function);
 
   &:hover,
   &:active,
   &:focus {
     color: var(--accent-color);
+  }
+}
+
+.container-footer-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }

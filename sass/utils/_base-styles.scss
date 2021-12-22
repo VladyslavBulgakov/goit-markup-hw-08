@@ -30,3 +30,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container-flex {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}

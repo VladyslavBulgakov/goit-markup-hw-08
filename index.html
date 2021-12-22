@@ -146,7 +146,7 @@
     <!--Main section-->
     <main>
       <!-- Hero -->
-      <section class="visually-hidden hero hero-overlay">
+      <section class="hero hero-overlay">
         <div class="container">
           <h1 class="hero__text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button type="button" class="hero__button button" data-modal-open>Заказать услугу</button>
@@ -241,7 +241,7 @@
 
       <!--Features-->
 
-      <section class="visually-hidden features section section_color">
+      <section class="features section section_color">
         <div class="container">
           <!--Через сss скрыт заголовок этой секции-->
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -300,7 +300,7 @@
       </section>
 
       <!--Our duties-->
-      <section class="visually-hidden duties section section_color">
+      <section class="duties section section_color">
         <div class="container">
           <h2 class="title title_duties">Чем мы знимаемся</h2>
 
@@ -370,7 +370,7 @@
       </section>
 
       <!--Team-->
-      <section class="visually-hidden team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title title_team">Наша команда</h2>
 
@@ -651,7 +651,7 @@
         </div>
       </section>
 
-      <section class="visually-hidden section">
+      <section class="section">
         <div class="container">
           <h3 class="title title_customers">Постоянные клиенты</h3>
 
@@ -704,88 +704,92 @@
     </main>
 
     <!--Footer-->
-    <footer class="visually-hidden footer">
+    <footer class="footer">
       <div class="container container-flex">
-        <div class="adress-mr">
-          <a href="./index.html" class="logo footer-logo">
-            <span class="logo__accent">Web</span>Studio</a
-          >
-          <address class="adress">
-            <ul class="adress__list">
-              <li class="adress__item">
+        <div class="container-footer-flex">
+          <div class="adress-contacts">
+            <a href="./index.html" class="logo footer-logo">
+              <span class="logo__accent">Web</span>Studio</a
+            >
+            <address class="adress">
+              <ul class="adress__list">
+                <li class="adress__item">
+                  <a
+                    href="https://goo.gl/maps/4b7uez3o3h5r4u1Y7"
+                    class="adress__link-geoposition"
+                    target="_blank"
+                    rel="noopener norederrer"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="adress__item">
+                  <a href="mailto:info@example.com" class="footer-email adress__link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a href="tel:+380991111111" class="footer-phone adress__link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join-us">
+            <p class="join-us__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+
+            <ul class="social-bar footer-social-bar">
+              <li class="social-bar__item">
                 <a
-                  href="https://goo.gl/maps/4b7uez3o3h5r4u1Y7"
-                  class="adress__link-geoposition"
+                  class="social-bar__link social-bar__link_color container-flex"
+                  href="https://www.instagram.com/"
                   target="_blank"
-                  rel="noopener norederrer"
+                  rel="noreferrer noopener"
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  <svg class="" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="adress__item">
-                <a href="mailto:info@example.com" class="footer-email adress__link"
-                  >info@example.com</a
+              <li class="social-bar__item">
+                <a
+                  class="social-bar__link social-bar__link_color container-flex"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
+                  <svg class="icon-twitter" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress__item">
-                <a href="tel:+380991111111" class="footer-phone adress__link">+38 099 111 11 11</a>
+              <li class="social-bar__item">
+                <a
+                  class="social-bar__link social-bar__link_color container-flex"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="icon-facebook" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-bar__item">
+                <a
+                  class="social-bar__link social-bar__link_color container-flex"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <svg class="" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join-us">
-          <p class="join-us__text">ПРИСОЕДИНЯЙТЕСЬ</p>
-
-          <ul class="social-bar footer__social-bar">
-            <li class="social-bar__item">
-              <a
-                class="social-bar__link social-bar__link_color container-flex"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-bar__item">
-              <a
-                class="social-bar__link social-bar__link_color container-flex"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="icon-twitter" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-bar__item">
-              <a
-                class="social-bar__link social-bar__link_color container-flex"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="icon-facebook" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-bar__item">
-              <a
-                class="social-bar__link social-bar__link_color container-flex"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <svg class="" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="subcribe-box">
