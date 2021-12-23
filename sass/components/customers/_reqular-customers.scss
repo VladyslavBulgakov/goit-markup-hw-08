@@ -17,6 +17,7 @@
     align-items: unset;
     flex-wrap: unset;
   }
+
   &__item {
     width: 100%;
     margin-bottom: 10px;
@@ -54,7 +55,7 @@
     @media screen and (min-width: 1200px) {
       max-width: 170px;
       height: 92px;
-
+      margin-bottom: 0;
       &:not(:last-child) {
         margin-right: 30px;
       }

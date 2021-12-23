@@ -9,6 +9,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: va(--bcg-listr-color);
@@ -1287,6 +1289,7 @@ button {
   .customers-logo__item {
     max-width: 170px;
     height: 92px;
+    margin-bottom: 0;
   }
   .customers-logo__item:not(:last-child) {
     margin-right: 30px;
