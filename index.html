@@ -377,16 +377,25 @@
           <!--Photos of our team-->
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                srcset="
-                  ./images/mate1-450-x1.jpg   450w,
-                  ./images/mate1-900-x2.jpg   900w,
-                  ./images/mate1-1350-x3.jpg 1350w
-                "
-                src="./images/mate1-mobile-450-x1.jpg"
-                alt="Мужчина в имиджевых очках с бородой, улыбается"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate1-desctop-270.jpg 1x, ./images/mate1-desctop-540.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mate1-tablet-354.jpg 1x, ./images/mate1-tablet-708.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mate1-mobile-450.jpg 1x, ./images/mate1-mobile-900.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/mate1-mobile-450.jpg"
+                  alt="Мужчина в имиджевых очках с бородой, улыбается"
+                />
+              </picture>
 
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
@@ -444,18 +453,28 @@
                 </ul>
               </div>
             </li>
-
             <li class="team-list__item">
-              <img
-                srcset="
-                  ./images/mate2-450-x1.jpg   450w,
-                  ./images/mate2-900-x2.jpg   900w,
-                  ./images/mate2-1350-x3.jpg 1350w
-                "
-                src="./images/mate2-450-x1.jpg"
-                alt="Девушка в имиджевых очках и деловом костюме, блондинка, улыбается "
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate2-desctop-270.jpg 1x, ./images/mate2-desctop-540.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/mate2-tablet-354.jpg 1x, ./images/mate2-tablet-708.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mate2-mobile-450.jpg 1x, ./images/mate2-mobile-900.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/mate2-mobile-450.jpg"
+                  alt="Девушка в имиджевых очках, блондинка в деловом костюме, улыбается"
+                />
+              </picture>
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__job" lang="en">Frontend Developer</p>
@@ -513,16 +532,27 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                srcset="
-                  ./images/mate3-450-x1.jpg   450w,
-                  ./images/mate3-900-x2.jpg   900w,
-                  ./images/mate3-1350-x3.jpg 1350w
-                "
-                src="./images/mate3-450-x1.jpg"
-                alt="Мужчина в рубашке с улыбкой на лице"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate3-desctop-270.jpg 1x, ./images/mate3-desctop-540.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/mate3-tablet-354.jpg 1x, ./images/mate3-tablet-708.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mate3-mobile-450.jpg 1x, ./images/mate3-mobile-900.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/mate3-mobile-450.jpg"
+                  alt="Мужчина в рубашке небесного цвета с улыбкой"
+                />
+              </picture>
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__job" lang="en">Marketing</p>
@@ -580,16 +610,25 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                srcset="
-                  ./images/mate4-450-x1.jpg   450w,
-                  ./images/mate4-900-x2.jpg   900w,
-                  ./images/mate4-1350-x3.jpg 1350w
-                "
-                src="./images/mate4-450-x1.jpg"
-                alt="Мужчина с бородой в очках"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate4-desctop-270.jpg 1x, ./images/mate4-desctop-540.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/mate4-tablet-354.jpg 1x, ./images/mate4-tablet-708.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mate4-mobile-450.jpg 1x, ./images/mate4-mobile-900.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/mate4-mobile-450.jpg"
+                  alt="Мужчина в черной футболке с коротко стриженной бородой в имиджевых очках"
+                />
+              </picture>
               <div class="team-list__box_padding">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__job" lang="en">UI Designer</p>
