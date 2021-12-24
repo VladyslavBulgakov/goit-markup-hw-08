@@ -1591,6 +1591,7 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-cards__item {
     margin-right: 30px;
+    width: 354px;
   }
   .portfolio-cards__item:nth-child(2n) {
     margin-right: 0;
@@ -1618,7 +1619,7 @@ button {
 }
 
 .portfolio-cards__link {
-  color: var(--primary-text-color);
+  color: currentColor;
   transition: color 250ms var(--transition-timing-function);
 }
 
@@ -1642,7 +1643,6 @@ button {
 }
 
 .portfolio-cards__title_name {
-  display: inline-block;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 18px;
