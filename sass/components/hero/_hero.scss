@@ -10,7 +10,7 @@
 }
 
 .hero-overlay {
-  max-width: 100vw;
+  max-width: 100%;
   max-height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero-mobile-480-1x.jpg');
@@ -45,47 +45,6 @@
       background-image: url('../images/hero-desctop-1200-2x.jpg');
     }
   }
-
-  // @media screen and (min-width: 480px) {
-  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //     -webkit-image-set(url('../images/hero-tablet-768-1x.jpg') 1x, url('../images/hero-tablet-768-2x.jpg')
-  //           2x);
-  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //     image-set(
-  //       url('../images/hero-tablet-768-1x.jpg') 1x,
-  //       url('../images/hero-tablet-768-2x.jpg') 2x
-  //     );
-  // }
-  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   -webkit-image-set(url('../images/hero-mobile-480-1x.jpg') 1x, url('../images/hero-mobile-480-2x.jpg')
-  //         2x);
-  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   image-set(
-  //     url('../images/hero-mobile-480-1x.jpg') 1x,
-  //     url('../images/hero-mobile-480-2x.jpg') 2x
-  //   );
-
-  // @media screen and (min-device-pixel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //     url('../images/hero-mobile-480-2x.jpg');
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   max-height: 600px;
-  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //     -webkit-image-set(url('../images/hero-desctop-1200-1x.jpg') 1x, url('../images/hero-desctop-1200-2x.jpg')
-  //           2x);
-  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //     image-set(
-  //       url('../images/hero-desctop-1200-1x.jpg') 1x,
-  //       url('../images/hero-desctop-1200-2x.jpg') 2x
-  //     );
-  // }
-
-  // max-width: 1600px;
-  // max-height: 600px;
 }
 
 .hero__text {
@@ -128,31 +87,3 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
-
-// ---------------------------test----------------------------------
-// .button::before {
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   opacity: 0;
-
-//   width: 0;
-//   height: 0;
-
-//   border-radius: 50%;
-
-//   transition: transform 1250ms var(--transition-timing-function),
-//     background-color 250ms var(--transition-timing-function);
-// }
-// .button:hover:before,
-// .button:focus:before {
-//   background-color: rgba(255, 156, 152, 0.85);
-
-//   transform: scaleX(1);
-//   opacity: 1;
-//   width: 200px;
-//   height: 200px;
-// }

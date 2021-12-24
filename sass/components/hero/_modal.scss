@@ -44,11 +44,11 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 450px;
+    min-width: 450px;
   }
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -65,8 +65,8 @@
 }
 
 .modal__button-close {
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
 
   background-color: var(--bcg-list-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -78,8 +78,8 @@
 }
 
 .modal__icon-close {
-  width: 18px;
-  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
 
   display: flex;
   justify-content: center;

@@ -1,6 +1,4 @@
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: va(--bcg-listr-color);
@@ -29,6 +27,6 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
