@@ -81,11 +81,12 @@
     border-radius: 4px;
     transition: border 250ms var(--transition-timing-function);
   }
-  .customers-logo__item > .customers-logo__link {
-    transform: scale(1);
-    transition: transform 250ms var(--transition-timing-function),
-      border 250ms var(--transition-timing-function);
-  }
+}
+
+.customers-logo__item > .customers-logo__link {
+  transform: scale(1);
+  transition: transform 250ms var(--transition-timing-function),
+    border 250ms var(--transition-timing-function);
 }
 
 .customers-logo__item {
@@ -96,10 +97,8 @@
   }
 }
 
-.customers-logo__link {
-  &__icon {
-    transition: fill 250ms var(--transition-timing-function);
-  }
+.customers-logo__link .customers-logo__icon {
+  transition: fill 250ms var(--transition-timing-function);
 }
 
 .customers-logo__link {
