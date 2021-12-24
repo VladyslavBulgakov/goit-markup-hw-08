@@ -1622,6 +1622,14 @@ button {
   transition: color 250ms var(--transition-timing-function);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-cards__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .portfolio-cards__link:hover, .portfolio-cards__link:focus, .portfolio-cards__link:active {
   color: var(--accent-color);
 }
@@ -1634,6 +1642,7 @@ button {
 }
 
 .portfolio-cards__title_name {
+  display: inline-block;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -1680,6 +1689,7 @@ button {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 767px) {
