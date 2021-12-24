@@ -1689,7 +1689,12 @@ button {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
-  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-cards__box_border {
+    flex-grow: 1;
+  }
 }
 
 @media screen and (max-width: 767px) {
