@@ -1331,6 +1331,20 @@ button {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-footer-flex {
+    display: flex;
+  }
+}
+
 .subcribe-box {
   text-align: center;
 }
@@ -1499,20 +1513,6 @@ button {
 
 .footer-logo:hover, .footer-logo:active, .footer-logo:focus {
   color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container-footer-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container-footer-flex {
-    display: flex;
-  }
 }
 
 .join-us {

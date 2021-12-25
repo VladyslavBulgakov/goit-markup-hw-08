@@ -11,15 +11,3 @@
     color: var(--accent-color);
   }
 }
-
-.container-footer-flex {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
