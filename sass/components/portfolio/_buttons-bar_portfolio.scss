@@ -1,9 +1,7 @@
 .buttons-bar {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -11,7 +9,9 @@
     align-items: center;
     margin-bottom: 30px;
   }
-
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   &__item {
     &:not(:last-child) {
       margin-right: 8px;

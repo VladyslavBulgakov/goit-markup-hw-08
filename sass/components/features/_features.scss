@@ -6,7 +6,10 @@
   &__list {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
+      justify-content: center;
+
       flex-wrap: wrap;
+      margin-bottom: -30px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -19,10 +22,15 @@
       margin-bottom: 30px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: calc((100% - 60px) / 2);
+      // width: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      min-width: 354px;
 
       margin-right: 30px;
       margin-bottom: 30px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
     }
     @media screen and (min-width: 1200px) {
       &:not(:last-child) {
@@ -49,6 +57,9 @@
 
     margin-top: 30px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: unset;
+    }
   }
   &__text {
     margin-top: 10px;
